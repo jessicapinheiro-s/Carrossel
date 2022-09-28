@@ -156,10 +156,8 @@ body {
     body {
         width: 425px;
         height: 100vh;
-        background: linear-gradient(#0e0f0f, #151a35);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
+        background: linear-gradient(#303636, #151a35);
+        
     }
     
 }

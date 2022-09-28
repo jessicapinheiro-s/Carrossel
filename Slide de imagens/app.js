@@ -40,10 +40,10 @@ function slide() {
         atual = images.length - 1;
     }
     document.querySelector('.imgAtual').classList.remove('.imgAtual');
-    if (window.matchMedia("(min-width:1300px)").matches) {
-        firstImg.style.marginLeft = -1000 * atual + 'px';
-    } else if (window.matchMedia("(min-width:1000px)").matches) {
+    if (window.matchMedia("(min-width:1600px)").matches) {
         firstImg.style.marginLeft = -1100 * atual + 'px';
+    } else if (window.matchMedia("(min-width:1360px)").matches) {
+        firstImg.style.marginLeft = -1000 * atual + 'px';
     }else if (window.matchMedia("(max-width:425px)").matches) {
         firstImg.style.marginLeft = -425* atual + 'px';
     }
