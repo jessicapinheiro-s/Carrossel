@@ -2,20 +2,28 @@
     margin: 0;
     padding: 0;
 }
+.header{
+    text-align: center;
+    padding: 20px 0 0;
+}
 body{
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #0e0f0f;
+    background: linear-gradient(#0e0f0f, #151a35) ;
+    background-position: center;
+    background-size: 100%;
+}
+#primeiraImg{
+    transition: all 0.8s;
 }
 .slide{
     width: 1100px;
+    margin: 0 auto;
     height: 570px;
     overflow: hidden;
     border-radius: 10px;
     transition: all 0.4s;
+    margin-top: 25px;
 }
 .slides{
     width: 100%;
@@ -74,10 +82,22 @@ body{
     transition: all 0.5s;
     background-color: #fff;
 }
-
-.imgs img.toLeft{
-    margin-right: 1100px;
-}
-.imgs img.toRight{
-    margin-left: 1100px;
+@media only screen and (min-width: 1300px) {
+    .imgs img{
+        width: 1000px;
+        height: 500px;
+    }
+    .slide{
+        width: 1000px;
+        height: 500px;
+        margin-top: 10px;
+    }
+    #bt-prox{
+        top: 50%;
+        right: 5%;
+    }
+    #bt-voltar{
+        top: 50%;
+        left: 5%;
+    }
 }
