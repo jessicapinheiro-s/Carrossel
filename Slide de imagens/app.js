@@ -44,7 +44,10 @@ function slide() {
         firstImg.style.marginLeft = -1000 * atual + 'px';
     } else if (window.matchMedia("(min-width:1000px)").matches) {
         firstImg.style.marginLeft = -1100 * atual + 'px';
+    }else if (window.matchMedia("(max-width:425px)").matches) {
+        firstImg.style.marginLeft = -425* atual + 'px';
     }
+
     document.getElementById('primeiraImg').classList.add('.imgAtual');
 }
 slide();
