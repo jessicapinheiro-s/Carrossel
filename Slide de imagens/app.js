@@ -38,7 +38,6 @@ document.getElementById('bt-prox').addEventListener('click', function () {
 })
 
 function slide() {
-    
     if (atual >= images.length) {
         atual = 0;
     } else if (atual < 0) {
@@ -46,6 +45,7 @@ function slide() {
     }
     document.querySelector('.imgAtual').classList.remove('.imgAtual');
     //define o tamanho da marginLeft de acordo com o tamanho da tela
+    
     if (window.matchMedia("(min-width:1600px)").matches) {
         firstImg.style.marginLeft = -1100 * atual + 'px';
     } else if (window.matchMedia("(min-width:1360px)").matches) {
